@@ -1,0 +1,14 @@
+1) Create a github account
+
+2) Verify your account by checking your email
+
+3) Create a repo on github or find one you want. 
+- If you want someone else's repo, they have to go to their repo settings on github.com and add you as a collaborator, and then you will get an email and accept
+
+4) Clone the repo using 'git clone <http url>' in the terminal
+
+5) Set your login info using 'git config --global user.email <your-email>' and 'git config --global user.name <your-name>' and windows will pop up with a little window for logging into your git account
+
+6) Make some changes to the files
+
+7) cd into the repo and run 'git add <files>' and 'git commit -m "message"' and 'git push'
