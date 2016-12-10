@@ -1,14 +1,33 @@
-1) Create a github account
+Download git
+https://git-scm.com/downloads
 
-2) Verify your account by checking your email
+-----------------------------------------------------------------------
 
-3) Create a repo on github or find one you want. 
-- If you want someone else's repo, they have to go to their repo settings on github.com and add you as a collaborator, and then you will get an email and accept
+Get set up
+1) At github.com: create a github account
 
-4) Clone the repo using 'git clone <http url>' in the terminal
+2) In your email: you'll get an email with a link to verify your account
 
-5) Set your login info using 'git config --global user.email <your-email>' and 'git config --global user.name <your-name>' and windows will pop up with a little window for logging into your git account
+3) In your terminal: and set your login info using 'git config --global user.email <your-email>' and 'git config --global user.name <your-name>'
 
-6) Make some changes to the files
+-----------------------------------------------------------------------
 
-7) cd into the repo and run 'git add <files>' and 'git commit -m "message"' and 'git push'
+Start coding
+1) At github.com: create a repo or find one you want. 
+- If you want someone else's repo, by default they have to go to their repo settings on github.com and add you as a collaborator, and then you will get an email and accept
+
+2) In the terminal: get the repo by running 'git clone <http url>'
+
+3) In your text editor: make some changes to the repo
+
+4) In the terminal: 'cd' into the repo and run 'git add <changed files>' and 'git commit -m "message"' and 'git push'
+
+-----------------------------------------------------------------------
+
+Your workflow will be pull, make changes, add, commit, push. You can also do multiple adds and commits before you push.
+
+If there are changes in the repo that you don't have, it won't let you push. You need to pull first. 
+
+Sometimes when you have local changes and you pull new changes, it will say
+- You can't pull, you need to stash your changes first. This means just say "git stash" and your changes will appear to be gone in your text editor and you can safely pull. Then pull. Then say "git stash pop" and your changes will be back. Sometimes you have to merge these changes, leading me to...
+- You need to merge the changes. It will say a list of files that need to be merged. Go look at those files. It will have a bunch of new garbage in it. Make the file look how you want, then do an add and a commit. Now you are two commits ahead of the repo, and you can push.
